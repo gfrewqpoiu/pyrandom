@@ -50,7 +50,7 @@ def get_random(method, params=None, id=None):
     }
     data['params'].update(params)
 
-    api_url = 'https://api.random.org/json-rpc/1/invoke'
+    api_url = 'https://api.random.org/json-rpc/2/invoke'
     r = requests.post(api_url, json=data)
     j = r.json()
     if 'error' in j:
